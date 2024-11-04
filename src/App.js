@@ -16,12 +16,12 @@ function App() {
    };
   return (
     <div className="Root">
-      <Heder myname={myname} city={'Mumbai'} />
-      <RightSidebar />
+      {/* <Heder myname={myname} city={'Mumbai'} />
+      <RightSidebar /> */}
       <MainContent />
-      <Footer myobj={obj} />
+      {/* <Footer myobj={obj} />
       <FirstComponent age="100" />
-      <UseStatePage />
+      <UseStatePage /> */}
     </div>
   );
 }
