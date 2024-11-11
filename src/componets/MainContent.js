@@ -48,9 +48,6 @@ export default function MainContent() {
     // })
   },[count, myname])
 
-
-
-
   return (
     <div>
       count is - {count}<br/>
