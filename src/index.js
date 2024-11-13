@@ -11,11 +11,19 @@ import Root from './roots/root';
 import ErrorPage from './error-page';
 import Contact from './roots/contact';
 import ManuBar from './roots/menu';
+import About from './roots/about';
+import Excercise from './roots/excercise';
+import Service from './roots/service';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <ManuBar />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/aboutssdsd",
+    element: <About />,
     errorElement: <ErrorPage />,
   },
   {
@@ -26,6 +34,16 @@ const router = createBrowserRouter([
   {
     path: "contacts/:contactId",
     element: <Contact />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/excercise",
+    element: <Excercise />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/service/:id",
+    element: <Service />,
     errorElement: <ErrorPage />,
   },
 ]);
